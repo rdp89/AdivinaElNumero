@@ -1,12 +1,17 @@
 package adivinalo;
 
 import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.InputMismatchException;
+
 public class MiTeclado {
 	private static Scanner numero = new Scanner(System.in);
 	private static Scanner respuesta = new Scanner(System.in);
 	
+	
 	public static int pedirEntero(String pregunta) throws InputMismatchException {
+		//BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
 		int number=0;
 		System.out.println(pregunta);
 		try{
