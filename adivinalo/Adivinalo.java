@@ -1,13 +1,10 @@
 package adivinalo;
 
 public class Adivinalo {
-	private int numero;
-	
-	public void generar(){
+	private static int numero;
+		
+	public static int dameNumero() {
 		numero = (int) Math.round(Math.random()*100);
-	}
-
-	public int getNumero() {
 		return numero;
 	}
 }
